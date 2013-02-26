@@ -11,8 +11,6 @@
 ```
   var option = require('mabbe')
 
-  ...
-
   var parsedQuery = option(req.param.id)
     .map(function(q) { return { _id: new ObjectId(q) }})
     .orElse(option(req.query.query).map(JSON.parse))
@@ -20,8 +18,6 @@
 ```
 
 ## API
-
-Coming really freakin' soon...
 
 ### Construct
 
@@ -41,10 +37,10 @@ Coming really freakin' soon...
 
 <table>
   <tr>
-    <td>`.map(fn)`</td>
+    <td><code>.map(fn)</code></td>
     <td>
-      <div>`option('x').map(function(x) { return x + x }) // ==> Some('xx')`</div>
-      <div>`option.none.map(function(x) { return x + x }) // ==> None`</div>
+      <div><code>option('x').map(function(x) { return x + x }) // ==> Some('xx')</code></div>
+      <div><code>option.none.map(function(x) { return x + x }) // ==> None</code></div>
     <td>
   </tr>
 </table>
