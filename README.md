@@ -8,7 +8,7 @@
 
 ## Example
 
-```
+```javascript
   var option = require('mabbe')
 
   var parsedQuery = option(req.param.id)
@@ -21,7 +21,7 @@
 
 ### Construct
 
-```
+```javascript
   var option = require('mabbe')
 
   option('pow')         // Some('pow')
@@ -36,16 +36,22 @@
 ### Use
 
 <table>
-  <tr>
-    <td><code>.map(fn)</code></td>
-    <td>
-      <div><code>option('x').map(function(x) { return x + x }) // ==> Some('xx')</code></div>
-      <div><code>option.none.map(function(x) { return x + x }) // ==> None</code></div>
-    <td>
-  </tr>
+  <tr><td><code>.exists // true || false</code></td></tr>
+  <tr><td><code>.val // value || undefined</code></td></tr>
+  <tr><td><code>.get() // value || undefined</code></td></tr>
+  <tr><td><code>.map(fn)</code></td></tr>
+  <tr><td><code>.filter(fn)</code></td></tr>
+  <tr><td><code>.flatMap(fn)</code></td></tr>
+  <tr><td><code>.pluck(string)</code> e.g. mabbe({ a: { b: 'c' } } }).pluck('a') or .pluck('a.b')</td></tr>
+  <tr><td><code>.each(fn)</code></td></tr>
+  <tr><td><code>.getOrElse(defaultValue)</code></td></tr>
+  <tr><td><code>.getOrFail(errorMessage)</code></td></tr>
+  <tr><td><code>.ortElse(fn || mabbe)</code></td></tr>
+  <tr><td><code>.either(fnForSome, fnForNone)</code></td></tr>
+  <tr><td><code>.toArray() // [value] || undefined</code></td></tr>
 </table>
 
-Moar coming soon...
+For more usage, see [tests](https://github.com/mtkopone/mabbe/blob/master/test/mabbe-test.js)
 
 Enjoy,
 
