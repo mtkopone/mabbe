@@ -1,0 +1,13 @@
+{
+  "name": "mabbe",
+  "version": "0.0.1",
+  "devDependencies": {
+    "mocha": "1.8.x",
+    "chai": "1.5.x"
+  },
+  "homepage": "https://github.com/mtkopone/mabbe",
+  "scripts": { "test": "./node_modules/.bin/mocha" },
+  "engines": { "node": "*" },
+  "main": "/mabbe",
+  "repository": { "type": "git", "url": "https://github.com/mtkopone/mabbe.git" }
+}
