@@ -87,8 +87,8 @@ describe('mabbe', function() {
   it('get() and val', function() {
     assert.equal(some.val, 'x')
     assert.equal(some.get(), 'x')
-    assert.isUndefined(none.val, 'x')
-    assert.isUndefined(none.get(), 'x')
+    assert.isUndefined(none.val)
+    assert.isUndefined(none.get())
   })
 
 })
