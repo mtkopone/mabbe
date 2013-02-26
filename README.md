@@ -2,7 +2,9 @@
 
 ... works in node.js and on the browser.
 
-(Download)[https://raw.github.com/mtkopone/mabbe/master/mabbe.js]
+[![Build Status](https://travis-ci.org/mtkopone/mabbe.png?branch=master)](https://travis-ci.org/mtkopone/mabbe)
+
+[Download](https://raw.github.com/mtkopone/mabbe/master/mabbe.js)
 
 ## Example
 
