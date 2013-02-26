@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/mtkopone/mabbe.png?branch=master)](https://travis-ci.org/mtkopone/mabbe)
 
-[Download](https://raw.github.com/mtkopone/mabbe/master/mabbe.js)
+[Download](https://raw.github.com/mtkopone/mabbe/master/mabbe.js) or `npm install mabbe`
 
 ## Example
 
