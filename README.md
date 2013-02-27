@@ -1,4 +1,4 @@
-`mabbe` is (yet another) Haskell:Maybe and Scala:Option for JS
+mabbe is (yet another) Haskell: Maybe and Scala: Option for JS
 
 ... works in node.js and on the browser.
 
